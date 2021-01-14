@@ -1,0 +1,112 @@
+.dm__steps {
+    overflow: hidden;
+    background-color: $body-background;
+
+    &.dm__steps--horizontal {
+        padding: 0 10px;
+        
+        & .dm__steps--items {
+            display: flex;
+            margin: 0 0 10px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 22px;
+        }
+    }
+
+    & .dm__step {
+        flex: 1;
+        font-size: $font-size-base;
+        position: relative;
+        color: $text-color;
+
+        & .dm__step--circle {
+            display: block;
+            @include size(5px,5px);
+            background-color: #888;
+            @include border-radius(50%);
+        }
+
+        &.dm__step--horizontal {
+            text-align: left;
+
+            &:last-child {
+                position: absolute;
+                right: 10px;
+                width: auto;
+            }
+
+            & .dm__step--circle-container {
+                position: absolute;
+                top: 28px;
+                left: -8px;
+                padding: 0 8px;
+                background-color: $body-background;
+                z-index: 1;
+            }
+
+            &.dm__step--process .dm__step--circle-container {
+                top: 22px;
+                color:$success-color;
+            }
+
+            &.dm__step--process .dm__step--title {
+                margin-left: 6px;
+            }
+
+            &:last-child .dm__step--circle-container {
+                left: auto;
+                right: -9px;
+            }
+
+            & .dm__step--line {
+                position: absolute;
+                left: 0px;
+                top: 30px;
+                width: 100%;
+                height: 1px;
+                background-color: #e5e5e5;
+            }
+
+            &:last-child .dm__step--line {
+                width: 0;
+            }
+ 
+            & .dm__step--title {
+                font-size: $font-size-small;
+                transform: translate3d(-50%, 0, 0);
+                display: inline-block;
+                margin-left: 3px;
+                text-align: left;
+            }
+
+            &:first-child .dm__step--title {
+                transform: none;
+                margin-left: 0;
+            }
+
+            &:first-child .dm__step--title {
+                transform: none;
+                margin-left: 0;
+            }
+
+            &.dm__step--process .dm__step--title{
+                color:$success-color;
+            }
+
+            &:last-child .dm__step--title {
+                transform: none;
+                margin-left: 0;
+            }
+
+            &.dm__step--finish {
+                color: $title-color;
+
+                & .dm__step--circle, 
+                & .dm__step--line {
+                    background-color: $success-color;
+                }
+            }
+        }
+    }
+}

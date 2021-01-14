@@ -1,0 +1,263 @@
+.dm__mask {
+    @include mask
+} 
+
+.dm__dialog{
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    max-width: 300px;
+    font-size: $font-size-base;
+    overflow: hidden;
+    transition: .2s;
+    @include border-radius;
+    background-color: $body-background;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: $zindex-modal;
+
+
+    & .dm__dialog--hd {
+        padding: 1.3em 1.6em 0.5em;
+    }
+
+    & .dm__dialog--title {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    & .dm__dialog--bd {
+        padding: .5em .8em .8em;
+        min-height: 40px;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: $text-color;
+        max-height: 300px;
+        overflow: auto;
+        -webkit-overflow-scrolling:touch;
+
+        & .dm__dialog--bd-input{
+            height: 38px;
+            border: 1px solid $border-color-split;
+            padding: 0 2px;
+            @include border-radius;
+            width: auto;
+
+            &::-webkit-input-placeholder{
+                color: $input-placeholder-color;
+            }
+        }
+
+
+    }
+
+
+    & .dm__dialog--ft {
+        position: relative;
+        line-height: 48px;
+    
+        & button{
+            background-color: $body-background;
+            font-size: $font-size-base;
+            padding: 1.5rem 2rem;
+
+            & span{
+                font-size: $font-size-base; 
+            }
+       
+        }
+
+        & .dm__btn--group button{
+            display: block;
+            flex: 1;
+            // color: $btn-default-color;
+            text-decoration: none;
+            position: relative;
+            border-radius: 0;
+            border: none;
+            color: #fff;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 200%;
+                height: 200%;
+                transform: scale(0.5);
+                transform-origin: 0px 0px 0px;
+                pointer-events: none;
+                box-sizing: border-box;
+                border-top: 1px solid $border-color-base;
+            }
+
+            &.dm__btn--default{
+                border-right:none;
+                border-bottom-left-radius: 4px;
+                background-color: #ddd;
+                color: $text-color;
+                
+                &::before{
+                    
+                }
+            }
+
+            &.dm__btn--primary{
+                border-bottom-right-radius: 4px;
+                background-color: $base-color;
+                color: #fff;
+            }
+
+            
+        }
+
+        & .dm__btn--default{
+            display: block;
+            flex: 1;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            border-radius: 0;
+            border: none;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: #ddd;
+            
+            &:hover,
+            &:active {
+                // background-color: $plain-color;
+                text-decoration: none;
+                // color: $text-color;
+                border: none;
+            }
+
+            // &:first-child{
+            //     border-right:none;
+            //     border-bottom-left-radius: 4px;
+            //     background-color: #ccc;
+            // }
+
+            // &:last-child{
+            //     border-bottom-right-radius: 4px;
+            //     background-color: $base-color;
+            // }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 200%;
+                height: 200%;
+                transform: scale(0.5);
+                transform-origin: 0px 0px 0px;
+                pointer-events: none;
+                box-sizing: border-box;
+                border: 1px solid $border-color-base;
+                border-bottom: none;
+            }
+
+            // &:first-child::before{
+            //     border-right: none;
+            // }
+
+            &.is-long{
+                height: auto;
+            }
+        }
+
+        & .dm__btn--primary{
+            display: block;
+            flex: 1;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            border-radius: 0;
+            border: none;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: $base-color;
+
+            &:hover,
+            &:active {
+                // background-color: $plain-color;
+                text-decoration: none;
+                // color: $text-color;
+                border: none;
+            }
+
+            // &:first-child{
+            //     border-right:none;
+            //     border-bottom-left-radius: 4px;
+            //     background-color: #ccc;
+            // }
+
+            // &:last-child{
+            //     border-bottom-right-radius: 4px;
+            //     background-color: $base-color;
+            // }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 200%;
+                height: 200%;
+                transform: scale(0.5);
+                transform-origin: 0px 0px 0px;
+                pointer-events: none;
+                box-sizing: border-box;
+                border: 1px solid $border-color-base;
+                border-bottom: none;
+            }
+
+            // &:first-child::before{
+            //     border-right: none;
+            // }
+
+            &.is-long{
+                height: auto;
+            }
+        }
+
+        // & .dm__btn--default{
+        //     display: block;
+        //     flex: 1;
+        //     color: $btn-default-color;
+        //     text-decoration: none;
+        //     position: relative;
+        //     border-radius: 0;
+        //     border: none;
+        //     border-bottom-left-radius: 4px;
+        //     border-bottom-right-radius: 4px;
+
+        //     &:hover,
+        //     &:active {
+        //         background-color: $plain-color;
+        //         text-decoration: none;
+        //         color: $text-color;
+        //         border: none;
+        //     }
+
+            
+
+        //     &::before{
+        //         content: "";
+        //         position: absolute;
+        //         top: 0px;
+        //         left: 0px;
+        //         width: 200%;
+        //         height: 200%;
+        //         transform: scale(0.5);
+        //         transform-origin: 0px 0px 0px;
+        //         pointer-events: none;
+        //         box-sizing: border-box;
+        //         border-top: 1px solid $border-color-base;
+        //     }
+        // }
+    }
+}

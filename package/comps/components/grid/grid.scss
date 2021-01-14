@@ -1,0 +1,108 @@
+.dm__grids {
+    position: relative;
+    overflow: hidden;
+    
+    &.dm__grids--2 .dm__grid{
+        width: 50%;
+    }
+
+    &.dm__grids--3 .dm__grid{
+        width: 33.333333%;
+    }
+
+    &.dm__grids--4 .dm__grid{
+        width: 25%;
+    }
+
+    &.dm__grids--5 .dm__grid{
+        width: 20%;
+    }
+
+    &.dm__grids--6 .dm__grid{
+        width: 16.666667%;
+    }
+
+    & .dm__grid {
+        position: relative;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            bottom: 0;
+            border-right: $border-width-default $border-style-default $border-color-base;
+            color: $text-color;
+            transform-origin: 100% 0;
+            transform: scaleX(0.5);
+        }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            border-bottom: $border-width-default $border-style-default $border-color-base;
+            color: $text-color;
+            transform-origin: 0 100%;
+            transform: scaleY(0.5);
+        }
+    }
+
+    &:before,
+    &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $text-color;
+        transform-origin: 0 0;
+    }
+
+    &:before {
+        right: 0;
+        height: 1px;
+        border-top: $border-width-default $border-style-default $border-color-base;
+        transform: scaleY(0.5);
+    }
+    &:after {
+        width: 1px;
+        bottom: 0;
+        border-left: $border-width-default $border-style-default $border-color-base;
+        transform: scaleX(0.5);
+    }
+
+    & .dm__grid--icon {
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px;
+
+        & span{
+            font-size: 22px;
+            color: $text-color;
+        }
+    }
+
+    & .dm__grid--text {
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        color: $text-color;
+
+        & span{
+            font-size: $font-size-small;
+        }
+    }
+    
+
+}

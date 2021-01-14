@@ -1,0 +1,122 @@
+.dm__radio--group {
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: left;
+
+    & .dm__radio {
+        width: 100%; 
+        display: flex;
+        line-height: $line-height-computed*2.4;
+        position: relative;
+
+        & .dm__radio--icon {
+            flex: 1;
+            width: 100%;
+            color: #525252;
+            text-align: right;
+            font-size: $font-size-base;
+            padding-right: 10px;
+            justify-content: flex-end;
+        }
+
+        & > input[type=radio] {
+            position: absolute;
+            left: -9999em;
+
+            & + .dm__radio--icon:before {
+                color: currentColor;
+                display: none;
+            }
+
+            &:checked + .dm__radio--icon:before {
+                display: inline;
+                font-size: $font-size-base*2;
+                position: absolute;
+                right: 0;
+            }
+
+        }
+
+        &.disabled .dm__radio--text {
+            color: #ccc;
+        }
+        
+        &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            // z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: $border-width-default $border-style-default $border-color-split;
+            transform: scaleY(.5) scaleX(1.5);
+            transform-origin: 0 0;
+        }
+    
+        &.horizontal{
+            display: inline-flex;
+            padding-right: 10px;
+            width: auto;
+            white-space: nowrap;
+        
+
+            & .dm__radio--text-horizontal{
+                font-size: $font-size-base;
+                margin-left: .2rem;
+            }
+
+            & .dm__icon--radio-horizontal{
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                z-index: 10;
+                vertical-align: middle;
+                pointer-events: none;
+                width: $font-size-big;
+                height: $font-size-big;
+                // margin-top: -4px;
+            }
+
+            & > input[type=radio] {
+                position: absolute;
+                left: -9999em;
+    
+                & + .dm__icon--radio-horizontal:before {
+                    color: #ccc;
+                    display: inline;
+                    content: "\E680";
+                    font-size: $font-size-base*1.1;
+                    right: 0;
+                    // top: -18px;
+                    position: absolute;
+                }
+    
+                &:checked + .dm__icon--radio-horizontal:before {
+                    color: currentColor;
+                    content: "\E62B";
+                }
+    
+            }
+
+            &.disabled {
+                
+                & .dm__radio--text-horizontal {
+                    color: #ccc;
+                }
+
+                & > input[type=radio] + .dm__icon--radio-horizontal:before{
+                    color: #efefef;
+                }
+                
+            }
+
+            &:not(:last-child):after {
+                border-bottom: none;
+            }
+        }
+    }
+
+}
+

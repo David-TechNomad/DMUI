@@ -1,0 +1,88 @@
+.dm__loading--wrap{
+    text-align: center;
+}
+
+.dm__loading{
+
+    // ripple效果预留
+    .ripple {
+        display: inline-block;
+        position: relative;
+        @include size(32px,32px);
+        
+        & div {
+        position: absolute;
+        border: 4px solid #fff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        
+        &:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+      }
+    } 
+      
+    & .dm__loading--loader {
+        animation: spin 1250ms linear infinite;
+        border: 2px solid $primary-color;
+        border-right-color: transparent;
+        @include border-radius(100px);
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        text-indent: -9999px;
+        @include size(32px,32px);
+
+        &.borderRightTransparent {
+            border-right-color: transparent!important;
+        }
+    }
+
+    //非行内的时候
+    &.dm__loading--fullScreen{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        transform: translate(-50%, -50%);
+        background: $body-background;
+        padding: 14px 10px 10px;
+        @include border-radius();
+        z-index: $zindex-loading;
+        
+    }
+    // 垂直显示
+    & .dm__loading--vertical{
+        margin: 0 auto;
+        display: block;
+    }
+
+    & .dm__loading--text{
+        display: inline-block;
+        height: 34px;
+        line-height: 36px;
+        font-size: $font-size-base;
+        vertical-align: top;
+    }
+
+    &.customize{
+        padding: 10px;
+    }
+
+    & .dm__loading--close{
+        font-size: $font-size-small*0.9;
+        vertical-align: middle;
+        position: absolute;
+        right: -0.5rem;
+        top: -0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        background: $body-background;
+        @include border-radius(30px);
+        color: $close-color; 
+    }
+}

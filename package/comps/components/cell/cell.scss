@@ -1,0 +1,119 @@
+.dm__cell--box{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dm__cell {
+    background-color: $body-background;
+    position: relative;
+
+    & .dm__cell--title {
+        padding: 0 10px 4px;
+        font-size: $font-size-base;
+        text-align: left;
+        color: $text-color;
+        position: relative;
+        // z-index: 1;
+        background-color: #f5f5f5;
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 3;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: $border-width-default $border-style-default $border-color-base;
+            transform: scaleY(.5);
+            transform-origin: 0 0;
+        }
+    
+    }
+
+    // & .dm__cell--item:not(textarea) {
+    //     @include tap-color($background-color-base, .95);
+    // }
+
+    & .dm__cell--item {
+        display: flex;
+        position: relative;
+        padding-left: 10px;
+        overflow: hidden;
+        font-size: $font-size-base;
+
+        & .dm__cell--left, 
+        & .dm__cell--right {
+            display: flex;
+            align-items: center;
+        }
+        
+        & .dm__cell--left {
+            color: $text-color;
+            white-space: nowrap;
+
+            & [class^="dm__icon--"], 
+            & [class*=" dm__icon--"] {
+                display: block;
+                margin-right: 2px;
+            }
+        }
+        
+        & a.dm__cell--right{
+            background-color: $body-background;
+            text-decoration: none;
+        }
+
+        & .dm__cell--right {
+            flex: 1;
+            width: 100%;
+            min-height: $line-height-computed*2.4;
+            color: $text-color;
+            text-align: right;
+            padding-right: 10px;
+            justify-content: flex-end;
+
+            & [class^="dm__icon--"], 
+            & [class*=" dm__icon--"] {
+                display: block;
+                margin-left: 2px;
+            }
+
+            & .dot {
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                @include border-radius(100px);
+                background-color: $error-color;
+            }
+
+        }
+
+        &:not(:last-child):after {
+            margin-left: 10px;
+            content: "";
+            position: absolute;
+            // z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: $border-width-default $border-style-default $border-color-split;
+            transform: scaleY(.5);
+            transform-origin: 0 0;
+        }
+
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        // z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: $border-width-default $border-style-default $border-color-base;
+        transform: scaleY(.5);
+        transform-origin: 0 0;
+    }
+
+    
+}
