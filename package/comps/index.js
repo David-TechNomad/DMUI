@@ -16,6 +16,9 @@ import Popup from './components/popup/index'
 import Lazy from './components/lazy/index'
 import KeyBoard from './components/keyboard/index'
 import Table from './components/table/index'
+import Progress from './components/progress/index'
+import Carousel from './components/carousel/index'
+import CarouselItem from './components/carousel-item/index'
 
 import Button from './components/button/index'
 import Tabbar from './components/tabbar/index'
@@ -65,7 +68,10 @@ const components = {
   Flexbox,
   SeamlessScrollItem: SeamlessScroll.item,
   SeamlessScroll,
-  Table
+  Table,
+  Progress,
+  Carousel,
+  CarouselItem,
 }
 
 const install = function (Vue) {

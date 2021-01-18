@@ -1,0 +1,149 @@
+.dm-progress {
+    position: relative;
+    line-height: 1
+}
+
+.dm-progress__text {
+    font-size: 14px;
+    color: #606266;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    line-height: 1
+}
+
+.dm-progress__text i {
+    vertical-align: middle;
+    display: block
+}
+
+.dm-progress--circle,
+.dm-progress--dashboard {
+    display: inline-block
+}
+
+.dm-progress--circle .dm-progress__text,
+.dm-progress--dashboard .dm-progress__text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.dm-progress--circle .dm-progress__text i,
+.dm-progress--dashboard .dm-progress__text i {
+    vertical-align: middle;
+    display: inline-block
+}
+
+.dm-progress--without-text .dm-progress__text {
+    display: none
+}
+
+.dm-progress--without-text .dm-progress-bar {
+    padding-right: 0;
+    margin-right: 0;
+    display: block
+}
+
+.dm-progress-bar,
+.dm-progress-bar__inner::after,
+.dm-progress-bar__innerText {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.dm-progress--text-inside .dm-progress-bar {
+    padding-right: 0;
+    margin-right: 0
+}
+
+.dm-progress.is-success .dm-progress-bar__inner {
+    background-color: #67C23A
+}
+
+.dm-progress.is-success .dm-progress__text {
+    color: #67C23A
+}
+
+.dm-progress.is-warning .dm-progress-bar__inner {
+    background-color: #E6A23C
+}
+
+.dm-progress.is-warning .dm-progress__text {
+    color: #E6A23C
+}
+
+.dm-progress.is-exception .dm-progress-bar__inner {
+    background-color: #F56C6C
+}
+
+.dm-progress.is-exception .dm-progress__text {
+    color: #F56C6C
+}
+
+.dm-progress-bar {
+    padding-right: 50px;
+    width: 100%;
+    margin-right: -55px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dm-progress-bar__outer {
+    height: 6px;
+    border-radius: 100px;
+    background-color: #EBEEF5;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle
+}
+
+.dm-progress-bar__inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #409EFF;
+    text-align: right;
+    border-radius: 100px;
+    line-height: 1;
+    white-space: nowrap;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.dm-progress-bar__inner::after {
+    content: "";
+    height: 100%
+}
+
+.dm-progress-bar__innerText {
+    color: #FFF;
+    font-size: 12px;
+    margin: 0 5px
+}
+
+@-webkit-keyframes progress {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 32px 0
+    }
+}
+
+@keyframes progress {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 32px 0
+    }
+}

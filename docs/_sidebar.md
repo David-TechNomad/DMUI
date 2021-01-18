@@ -19,6 +19,8 @@
  - [无缝滚动](/components/seamlessscroll.md) 
  - [数字键盘](/components/keyboard.md) 
  - [表格](/components/table.md) 
+ - [轮播](/components/carousel.md)
+ - [进度条](/components/progress.md)
 
 - 弹出层
  - [Modal](/components/modal.md)

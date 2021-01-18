@@ -1,4 +1,4 @@
-<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://chuantu.xyz/t6/741/1610523410x-591243120.jpg"/></a></div>  
+<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://chuantu.xyz/t6/741/1610937103x2073530471.jpg"/></a></div>  
  
 基于vue 2+ ，为公司产品打(zao)造(lun)的(zi)可复用UI组件，适用于 移动 和 部分PC 端，其中包括 基础组件 和 应用组件，目前 组件 和 文档 在不断完善中。
 
@@ -74,11 +74,12 @@ components: {
 - [x] 工单流程
 - [x] skeleton骨架
 - [x] Lazy延迟加载
-- [ ] 轮播
+- [x] 轮播
 - [x] ActionSheet
 - [x] Popup
 - [x] 数字键盘
 - [x] 表格
+- [x] 进度条
 - [x] 无缝滚动
 - [ ] 左右滑菜单
 - [ ] 时间选择器

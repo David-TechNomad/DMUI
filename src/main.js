@@ -10,6 +10,7 @@ import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
 Vue.use(VXETable);
+import './assets/iconfont/iconfont.css';
 /* eslint-disable */
 new Vue({
   el: '#app',

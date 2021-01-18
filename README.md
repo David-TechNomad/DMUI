@@ -1,4 +1,4 @@
-<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://chuantu.xyz/t6/741/1610523410x-591243120.jpg"/></a></div>
+<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://chuantu.xyz/t6/741/1610937103x2073530471.jpg"/></a></div>
 
 # DMUI
 
@@ -80,11 +80,12 @@ components: {
 - [x] 工单流程
 - [x] skeleton骨架
 - [x] Lazy延迟加载
-- [ ] 轮播
+- [x] 轮播
 - [x] ActionSheet
 - [x] Popup
 - [x] 数字键盘
 - [x] 表格
+- [x] 进度条
 - [x] 无缝滚动
 - [ ] 左右滑菜单
 - [ ] 时间选择器
