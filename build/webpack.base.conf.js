@@ -50,7 +50,8 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test')],
+        exclude: path.resolve(__dirname, '../src/utils/popper.js')
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

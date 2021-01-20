@@ -19,7 +19,7 @@ import Table from './components/table/index'
 import Progress from './components/progress/index'
 import Carousel from './components/carousel/index'
 import CarouselItem from './components/carousel-item/index'
-
+import DatePicker from './components/date-picker/index.js';
 import Button from './components/button/index'
 import Tabbar from './components/tabbar/index'
 import Radio from './components/radio/index'
@@ -33,6 +33,7 @@ import SeamlessScroll from './components/seamlessscroll/index'
 
 import GlobalModal from './components/globalmodal/index'
 import Toast from './components/toast/index'
+import Scrollbar from './components/scrollbar/index.js';
 
 const components = {
   Button,
@@ -72,6 +73,8 @@ const components = {
   Progress,
   Carousel,
   CarouselItem,
+  DatePicker,
+  Scrollbar,
 }
 
 const install = function (Vue) {

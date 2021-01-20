@@ -11,11 +11,10 @@
  - [表单](/components/form.md)
  - [网格](/components/grid.md)
  - [图标](/components/icons.md)
- - [轮播](/components/swiper.md)
- - [时间选择器](/components/datetimepicker.md) 
+ - [日期选择器](/components/datetimepicker.md)
  - [导航栏(顶部)](/components/navbar.md)
  - [标签栏(底部)](/components/tabbar.md)
- - [标签页](/components/tab.md)
+ <!-- - [标签页](/components/tab.md) -->
  - [无缝滚动](/components/seamlessscroll.md) 
  - [数字键盘](/components/keyboard.md) 
  - [表格](/components/table.md) 
