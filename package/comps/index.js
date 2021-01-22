@@ -20,6 +20,8 @@ import Progress from './components/progress/index'
 import Carousel from './components/carousel/index'
 import CarouselItem from './components/carousel-item/index'
 import DatePicker from './components/date-picker/index.js';
+import DMTabs from './components/tabs/index.js';
+import TabPane from './components/tab-pane/index.js';
 import Button from './components/button/index'
 import Tabbar from './components/tabbar/index'
 import Radio from './components/radio/index'
@@ -75,6 +77,8 @@ const components = {
   CarouselItem,
   DatePicker,
   Scrollbar,
+  DMTabs,
+  TabPane,
 }
 
 const install = function (Vue) {

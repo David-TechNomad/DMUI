@@ -110,7 +110,7 @@ export default {
 | operates     | 操作列数据   | Object    |     —    |     {}    |
 
 ### API
-| 参数              | 说明        | 类型      | 可选值      | 默认值   |
+| 事件名称              | 说明        | 类型      | 可选值      | 默认值   |
 |-------------------|------------|---------- |-------------|-------- | 
 | selectAllEvent    | 全选事件    | Function  |      —      |    —    |
 | selectChangeEvent | 单选事件    | Function  |      —      |    —    |
