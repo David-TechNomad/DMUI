@@ -1,4 +1,4 @@
-<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://chuantu.xyz/t6/741/1610937103x2073530471.jpg"/></a></div>  
+<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://nxw.so/4MdxM"/></a></div>  
  
 基于vue 2+ ，为公司产品打(zao)造(lun)的(zi)可复用UI组件，适用于 移动 和 部分PC 端，其中包括 基础组件 和 应用组件，目前 组件 和 文档 在不断完善中。
 

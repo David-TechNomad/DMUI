@@ -77,7 +77,19 @@
 .dm-progress.is-warning .dm-progress__text {
     color: #E6A23C
 }
-
+.dm-progress.is-active .dm-progress-bar__inner:before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-animation: dm-progress-active 2s ease-in-out infinite;
+    animation: dm-progress-active 2s ease-in-out infinite;
+}
 .dm-progress.is-exception .dm-progress-bar__inner {
     background-color: #F56C6C
 }
@@ -145,5 +157,15 @@
 
     100% {
         background-position: 32px 0
+    }
+}
+@keyframes dm-progress-active {
+    0% {
+        opacity: .3;
+        width: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
     }
 }
