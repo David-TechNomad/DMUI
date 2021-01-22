@@ -1,4 +1,4 @@
-# progress 标签
+# progress 进度条
 ----
 ### 基础用法
 使用```percentage```、```type```、```stroke-width```、```text-inside```、```status```和```color```属性来定义 progress 的样式。

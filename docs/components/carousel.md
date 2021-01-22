@@ -1,4 +1,4 @@
-# carousel 标签
+# carousel 轮播图
 ----
 ### 基础用法
 使用```dm-carousel```、```dm-carousel-item```、```trigger```、```type```、```height```和```interval```、```loop```、```direction```属性来定义 carousel 的样式。

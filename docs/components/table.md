@@ -1,4 +1,4 @@
-# Table 标签
+# Table 表格
 ----
 ### 基础用法
 使用```columns```、```tableData```、```seqNumber```、```mutiSelect```、```operatesShow```和```operates```属性来定义 Table 的样式。
