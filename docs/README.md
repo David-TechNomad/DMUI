@@ -66,6 +66,7 @@ components: {
 - [x] 搜索框
 - [x] 单元格
 - [x] 表单
+- [x] 城市选择器
 - [x] 网格和图标
 - [x] flexbox
 - [x] Modal

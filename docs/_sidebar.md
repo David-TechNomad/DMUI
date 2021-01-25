@@ -9,6 +9,7 @@
  - [单元格](/components/cell.md)
  - [Flexbox](/components/flexbox.md)
  - [表单](/components/form.md)
+ - [城市选择器](/components/regionSelect.md)
  - [网格](/components/grid.md)
  - [图标](/components/icons.md)
  - [日期选择器](/components/datetimepicker.md)

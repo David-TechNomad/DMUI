@@ -23,6 +23,7 @@ import DatePicker from './components/date-picker/index.js';
 import DMTabs from './components/tabs/index.js';
 import TabPane from './components/tab-pane/index.js';
 import SlideMenu from './components/slidemenu/index.js';
+import RegionSelect from './components/regionSelect/index.js';
 import Button from './components/button/index'
 import Tabbar from './components/tabbar/index'
 import Radio from './components/radio/index'
@@ -81,6 +82,7 @@ const components = {
   DMTabs,
   TabPane,
   SlideMenu,
+  RegionSelect,
 }
 
 const install = function (Vue) {
