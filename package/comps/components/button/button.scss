@@ -16,7 +16,43 @@
     padding: 12px 20px;
     position: relative;
 } 
+.dm-button--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px
+}
 
+.dm-button--mini,
+.dm-button--small {
+    font-size: 12px;
+    border-radius: 3px
+}
+
+.dm-button--medium.is-round {
+    padding: 10px 20px
+}
+
+.dm-button--medium.is-circle {
+    padding: 10px
+}
+
+.dm-button--small,
+.dm-button--small.is-round {
+    padding: 9px 15px
+}
+
+.dm-button--small.is-circle {
+    padding: 9px
+}
+
+.dm-button--mini,
+.dm-button--mini.is-round {
+    padding: 7px 15px
+}
+
+.dm-button--mini.is-circle {
+    padding: 7px
+}
 .dm__btn--default{
     color: $btn-default-color;
     background: $btn-default-bg;

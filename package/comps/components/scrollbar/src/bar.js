@@ -25,7 +25,7 @@ export default {
     const { size, move, bar } = this;
 
     return (
-      `<div
+      <div
         class={ ['dm-scrollbar__bar', 'is-' + bar.key] }
         onMousedown={ this.clickTrackHandler } >
         <div
@@ -34,7 +34,7 @@ export default {
           onMousedown={ this.clickThumbHandler }
           style={ renderThumbStyle({ size, move, bar }) }>
         </div>
-      </div>`
+      </div>
     );
   },
 

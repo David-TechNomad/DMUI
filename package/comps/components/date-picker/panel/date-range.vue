@@ -25,8 +25,8 @@
                   size="small"
                   :disabled="rangeState.selecting"
                   ref="minInput"
-                  :placeholder="t('dm.datepicker.startDate')"
-                  class="dm-date-range-picker__editor"
+                  :placeholder="t('el.datepicker.startDate')"
+                  class="dm-date-range-picker__editor borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                   :value="minVisibleDate"
                   @input="val => handleDateInput(val, 'min')"
                   @change="val => handleDateChange(val, 'min')" />
@@ -34,9 +34,9 @@
               <span class="dm-date-range-picker__time-picker-wrap" v-clickoutside="handleMinTimeClose">
                 <dm-input
                   size="small"
-                  class="dm-date-range-picker__editor"
+                  class="dm-date-range-picker__editor borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                   :disabled="rangeState.selecting"
-                  :placeholder="t('dm.datepicker.startTime')"
+                  :placeholder="t('el.datepicker.startTime')"
                   :value="minVisibleTime"
                   @focus="minTimePickerVisible = true"
                   @input="val => handleTimeInput(val, 'min')"
@@ -55,9 +55,9 @@
               <span class="dm-date-range-picker__time-picker-wrap">
                 <dm-input
                   size="small"
-                  class="dm-date-range-picker__editor"
+                  class="dm-date-range-picker__editor borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                   :disabled="rangeState.selecting"
-                  :placeholder="t('dm.datepicker.endDate')"
+                  :placeholder="t('el.datepicker.endDate')"
                   :value="maxVisibleDate"
                   :readonly="!minDate"
                   @input="val => handleDateInput(val, 'max')"
@@ -66,7 +66,7 @@
               <span class="dm-date-range-picker__time-picker-wrap" v-clickoutside="handleMaxTimeClose">
                 <dm-input
                   size="small"
-                  class="dm-date-range-picker__editor"
+                  class="dm-date-range-picker__editor borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                   :disabled="rangeState.selecting"
                   :placeholder="t('el.datepicker.endTime')"
                   :value="maxVisibleTime"

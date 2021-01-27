@@ -6,7 +6,8 @@
         :class="[
         'dm__btn--'+type,
         {'is-plain': plain, 'is-round': round, 'is-long': long, 'dm__btn--block': block, 'no-radius': noRadius},
-        iconClass
+        iconClass,
+        buttonSize ? 'dm-button--' + buttonSize : '',
         ]"
         :disabled="disabled"
     >
@@ -51,6 +52,7 @@ export default {
       type: String,
       default: ''
     },
+    size: String,
     block: Boolean,
     disabled: Boolean,
     plain: Boolean,
@@ -65,7 +67,10 @@ export default {
   computed: {
     iconClass () {
       if (this.icon !== '') return 'dm__hasIconBtn'
-    }
+    },
+    buttonSize() {
+      return this.size;
+    },
   }
 }
 </script>

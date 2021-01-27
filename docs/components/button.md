@@ -25,6 +25,7 @@
 | long     | 长按钮   | Boolean  |    — | false   |
 | loading     | 是否有加载效果   | Boolean  |    — | false   |
 | type     | 类型   | string    |   primary,success,warning,danger,info |     —    |
+| size     | 尺寸   | string    |   medium / small / mini |     —    |
 | plain     | 是否简约按钮   | Boolean    | — | false   |
 | disabled  | 是否禁用状态    | Boolean   | —   | false   |
 | icon  | 图标，已有的图标库中的图标名 | string   |  —  |  —  |

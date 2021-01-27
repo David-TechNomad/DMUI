@@ -24,6 +24,7 @@
                 :placeholder="t('dm.datepicker.selectDate')"
                 :value="visibleDate"
                 size="small"
+                class="borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                 @input="val => userInputDate = val"
                 @change="handleVisibleDateChange" />
             </span>
@@ -34,6 +35,7 @@
                 :placeholder="t('dm.datepicker.selectTime')"
                 :value="visibleTime"
                 size="small"
+                class="borderColor-e5e5e5 borderRadius2 pl5 boxSizeBorder"
                 @input="val => userInputTime = val"
                 @change="handleVisibleTimeChange" />
               <time-picker
@@ -128,14 +130,14 @@
           class="dm-picker-panel__link-btn"
           @click="changeToNow"
           v-show="selectionMode !== 'dates'">
-          {{ t('dm.datepicker.now') }}
+          {{ t('el.datepicker.now') }}
         </dm-button>
         <dm-button
           plain
           size="mini"
           class="dm-picker-panel__link-btn"
           @click="confirm">
-          {{ t('dm.datepicker.confirm') }}
+          {{ t('el.datepicker.confirm') }}
         </dm-button>
       </div>
     </div>

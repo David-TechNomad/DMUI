@@ -29,21 +29,21 @@
         >
         <div class="dm__input--close" v-if="hasClose&&(type == 'text'||type == 'search'||type == 'password'||type == 'email'||type == 'tel')&&!disabled&&!readonly" v-show="currentValue!=''" @click="emptyVal"><span class="dm__icon--close-outline"></span></div>
         <!-- 前置内容 -->
-        <span class="el-input__prefix" v-if="$slots.prefix || prefixIcon">
+        <span class="dm-input__prefix" v-if="$slots.prefix || prefixIcon">
           <slot name="prefix"></slot>
-          <i class="el-input__icon"
+          <i class="dm-input__icon"
             v-if="prefixIcon"
             :class="prefixIcon">
           </i>
         </span>
       <!-- 后置内容 -->
       <!-- <span
-        class="el-input__suffix"
+        class="dm-input__suffix"
         v-if="getSuffixVisible()">
-        <span class="el-input__suffix-inner">
+        <span class="dm-input__suffix-inner">
           <template v-if="!showClear || !showPwdVisible || !isWordLimitVisible">
             <slot name="suffix"></slot>
-            <i class="el-input__icon"
+            <i class="dm-input__icon"
               v-if="suffixIcon"
               :class="suffixIcon">
             </i>
@@ -54,13 +54,13 @@
             @click="clear"
           ></i>
           <i v-if="showPwdVisible"
-            class="el-input__icon el-icon-view el-input__clear"
+            class="dm-input__icon dm-icon-view dm-input__clear"
             @click="handlePasswordVisible"
           ></i>
         </span>
-        <i class="el-input__icon"
+        <i class="dm-input__icon"
           v-if="validateState"
-          :class="['el-input__validateIcon', validateIcon]">
+          :class="['dm-input__validateIcon', validateIcon]">
         </i>
       </span> -->
     </div>
@@ -150,9 +150,9 @@ export default {
     },
     validateIcon() {
       return {
-        validating: 'el-icon-loading',
-        success: 'el-icon-circle-check',
-        error: 'el-icon-circle-close'
+        validating: 'dm-icon-loading',
+        success: 'dm-icon-circle-check',
+        error: 'dm-icon-circle-close'
       }[this.validateState];
     },
     upperLimit() {
