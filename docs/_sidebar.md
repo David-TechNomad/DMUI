@@ -33,4 +33,5 @@
 - 应用组件
  - [工单流程](/components/step.md)
  - [skeleton骨架](/components/skeleton.md)
+ - [动画](/components/animation.md)
  - [Lazy延迟加载](/components/lazy.md)

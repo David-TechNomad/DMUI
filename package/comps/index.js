@@ -38,7 +38,7 @@ import SeamlessScroll from './components/seamlessscroll/index'
 import GlobalModal from './components/globalmodal/index'
 import Toast from './components/toast/index'
 import Scrollbar from './components/scrollbar/index.js';
-
+import CollapseTransition from './components/transitions/collapse-transition';
 const components = {
   Button,
   ButtonGroup: Button.group,
@@ -83,6 +83,7 @@ const components = {
   TabPane,
   SlideMenu,
   RegionSelect,
+  CollapseTransition,
 }
 
 const install = function (Vue) {
