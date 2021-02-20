@@ -1,4 +1,4 @@
-<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://mrw.so/5yVPhQ"/></a></div>
+<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="http://mrw.so/6x9dvd"/></a></div>
 
 # DMUI
 
