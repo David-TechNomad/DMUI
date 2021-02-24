@@ -1,4 +1,4 @@
-<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="https://img.kancloud.cn/19/74/1974752961581c0423f189dc0e1f4fa6_201x69.png"/></a></div>
+<div align=center><a href="https://github.com/dsh225/DMUI" target="blank"><img src="https://img.kancloud.cn/19/74/1974752961581c0423f189dc0e1f4fa6_201x69.png" alt="DMUI"/></a></div>
 
 # DMUI
 
